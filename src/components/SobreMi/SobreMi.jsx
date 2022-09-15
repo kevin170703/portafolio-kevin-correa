@@ -14,16 +14,18 @@ export default function SobreMi() {
         <h2>Sobre mi</h2>
         <p>
           Mi nombre es Kevin Correa, FullStack developer, me considero una
-          persona responsable, Atenta, dispuesta a escuchar y aprender de los
-          demas. Con muchas ganas de aprender nuevos recursos y mejorar en este
-          mundo de la tecnologia.
+          persona responsable, atenta, dispuesta a escuchar, aprender de los
+          demas y con grandes habilidades para el trabajo en equipo.
         </p>
+        <button>
+          <a href="">Descargar curriculum</a>
+        </button>
       </div>
       <div className={s.logos}>
         <img src={css} alt="css" />
         <img src={html} alt="html" />
         <img src={js} alt="js" />
-        <h2>tecnologias que manejo</h2>
+        <h2>Tecnologias que manejo</h2>
         <img src={react} alt="react" />
         <img src={redux} alt="redux" />
         <img src={node} alt="node.js" />

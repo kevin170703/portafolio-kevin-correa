@@ -25,6 +25,26 @@
   font-size: 80px;
 }
 
+.sobreMi button {
+  border-radius: 30px;
+  border: none;
+  background-color: #ede0d4;
+  margin-top: 10px;
+  padding: 20px;
+  font-size: 20px;
+  box-shadow: 5px 5px 20px #002855;
+}
+
+.sobreMi button:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease-out;
+}
+
+.sobreMi a {
+  color: #000;
+  text-decoration: none;
+}
+
 .logos {
   width: 40%;
   height: 50%;
