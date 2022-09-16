@@ -1,50 +1,52 @@
-.home{
-    background: rgb(0,0,0);
-    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,13,75,1) 100%); 
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
+.home {
+  background: rgb(0, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 13, 75, 1) 100%
+  );
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
 }
 
-.person{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: justify;
-    width: 60%;
-    height: 60%;
-    padding: 10px;
-    
+.person {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: justify;
+  width: 80%;
+  height: 60%;
+  padding: 10px;
 }
 
-
-.info{
-    width: 50%;
+.info {
+  width: 50%;
 }
 
-.info h1{
-    font-size: 60px;
+.info h1 {
+  font-size: 60px;
 }
 
-.person img{
-    width: 40%;
-    border-radius: 50%;
-    background-color: azure;
+.profile {
+  width: 50%;
+}
+.profile img {
+  width: 100%;
 }
 
 @media (max-width: 600px) {
-    .person {
-        width: 100vh;
-        flex-direction: column;
-    }
-    .person p{
-        width: 100%;
-    }
-
-    .person img{
-        width: 60%;
-    }
-
+  .person {
+    width: 100vh;
+    flex-direction: column;
   }
+  .person p {
+    width: 100%;
+  }
+
+  .person img {
+    width: 60%;
+  }
+}
