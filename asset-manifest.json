@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/portafolio-kevin-correa/static/css/main.40295df3.css",
+    "main.js": "/portafolio-kevin-correa/static/js/main.9d4d5a4d.js",
+    "index.html": "/portafolio-kevin-correa/index.html",
+    "main.40295df3.css.map": "/portafolio-kevin-correa/static/css/main.40295df3.css.map",
+    "main.9d4d5a4d.js.map": "/portafolio-kevin-correa/static/js/main.9d4d5a4d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.40295df3.css",
+    "static/js/main.9d4d5a4d.js"
+  ]
+}
