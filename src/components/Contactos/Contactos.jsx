@@ -18,9 +18,9 @@ export default function Contactos() {
       >
         <i className="bx bxl-whatsapp  bx-lg"></i>
       </a>
-      <a href="#">
-        <i className="bx bx-envelope bx-lg"></i>
-      </a>
+
+      <i className="bx bx-envelope bx-lg"></i>
+      <p>correakevinfabian01@gmail.com</p>
     </div>
   );
 }

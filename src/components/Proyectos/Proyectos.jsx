@@ -1,16 +1,19 @@
 import React from "react";
-import s from "./Proyectos.module.css"
+import s from "./Proyectos.module.css";
+import appClima from "../../img/appClima.png";
 
-export default function Proyectos(){
-    return(
-        <div className={s.content} id="proyectos">
-            
-            <div className={s.contentImg}>
-                <img src="https://www.iadsandevents.com/wp-content/uploads/2017/10/250x150.gif" alt="" />
-                <img src="https://www.iadsandevents.com/wp-content/uploads/2017/10/250x150.gif" alt="" />
-                <img src="https://www.iadsandevents.com/wp-content/uploads/2017/10/250x150.gif" alt="" />
-            </div>
-            <h2>Proyectos</h2>
+export default function Proyectos() {
+  return (
+    <div className={s.content} id="proyectos">
+      <div className={s.contentImg}>
+        <div>
+          <p>App clima</p>
+          <a href="https://app-clima-correa-kevin.netlify.app/" target="_blank">
+            <img src={appClima} alt="appClima" className={s.appClima} />
+          </a>
         </div>
-    )
+      </div>
+      <h2>Proyectos</h2>
+    </div>
+  );
 }
