@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/portafolio-kevin-correa/static/css/main.40295df3.css",
-    "main.js": "/portafolio-kevin-correa/static/js/main.9d4d5a4d.js",
+    "main.css": "/portafolio-kevin-correa/static/css/main.2dbd8066.css",
+    "main.js": "/portafolio-kevin-correa/static/js/main.8bee14de.js",
+    "static/media/profile.png": "/portafolio-kevin-correa/static/media/profile.e28fb280657a6ca88651.png",
+    "static/media/appClima.png": "/portafolio-kevin-correa/static/media/appClima.882010c3033dd4293ef0.png",
     "index.html": "/portafolio-kevin-correa/index.html",
-    "main.40295df3.css.map": "/portafolio-kevin-correa/static/css/main.40295df3.css.map",
-    "main.9d4d5a4d.js.map": "/portafolio-kevin-correa/static/js/main.9d4d5a4d.js.map"
+    "main.2dbd8066.css.map": "/portafolio-kevin-correa/static/css/main.2dbd8066.css.map",
+    "main.8bee14de.js.map": "/portafolio-kevin-correa/static/js/main.8bee14de.js.map"
   },
   "entrypoints": [
-    "static/css/main.40295df3.css",
-    "static/js/main.9d4d5a4d.js"
+    "static/css/main.2dbd8066.css",
+    "static/js/main.8bee14de.js"
   ]
 }
