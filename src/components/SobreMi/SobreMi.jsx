@@ -18,7 +18,7 @@ export default function SobreMi() {
           demas y con grandes habilidades para el trabajo en equipo.
         </p>
         <button>
-          <a href="https://drive.google.com/uc?export=download&id=1EeOtL46KdXn3I8uHX_MJja2g6lY6O8vq">
+          <a href="https://drive.google.com/uc?export=download&id=1RAZlhl0exSGKCo7XHkMxK0n8MPRYffWK">
             Descargar curriculum
           </a>
         </button>
