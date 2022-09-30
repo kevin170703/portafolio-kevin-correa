@@ -13,12 +13,12 @@ export default function SobreMi() {
       <div className={s.sobreMi}>
         <h2>Sobre mi</h2>
         <p>
-          Mi nombre es Kevin Correa, FullStack developer, me considero una
-          persona responsable, atenta, dispuesta a escuchar, aprender de los
+          Mi nombre es Kevin Correa, FullStack developer en Henry, me considero
+          una persona responsable, atenta, dispuesta a escuchar, aprender de los
           demas y con grandes habilidades para el trabajo en equipo.
         </p>
         <button>
-          <a href="https://drive.google.com/uc?export=download&id=154vcHuvNCPN4zgWbQ3ePkFKj_1k0fgGG">
+          <a href="https://drive.google.com/uc?export=download&id=1ZxF6QvducJKigzjuDqkSoue_YcwSaK7r">
             Descargar curriculum
           </a>
         </button>

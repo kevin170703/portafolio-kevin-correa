@@ -39,7 +39,7 @@
   padding-bottom: 10px;
 }
 
-.appClima:hover {
+.app:hover {
   transform: scale(1.05);
   transition: all 0.2s ease-out;
   background: rgba(29, 86, 253, 10);
