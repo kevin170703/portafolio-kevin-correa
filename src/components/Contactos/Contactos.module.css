@@ -21,3 +21,16 @@
   color: #fff;
   margin-left: -20px;
 }
+
+@media (max-width: 600px) {
+  .content {
+    height: 20vh;
+  }
+  .content i {
+    padding: 10px;
+  }
+  .content p {
+    font-size: 10px;
+    margin-left: 4px;
+  }
+}

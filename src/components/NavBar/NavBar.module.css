@@ -8,12 +8,6 @@
   position: fixed;
 }
 
-@media (max-width: 600px) {
-  .nav {
-    font-size: 12px;
-  }
-}
-
 .links {
   text-decoration: none;
   color: #fff;
@@ -47,4 +41,12 @@
   text-align: center;
   padding: 7px;
   margin-right: 20px;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    font-size: 15px;
+    justify-content: center;
+    padding: 0 10px;
+  }
 }
