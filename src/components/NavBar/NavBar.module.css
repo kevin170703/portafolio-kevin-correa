@@ -6,6 +6,17 @@
   height: 70px;
   width: 100%;
   position: fixed;
+  opacity: 0;
+  animation: navbar 1s ease 3s forwards;
+}
+
+@keyframes navbar {
+  from {
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .links {
@@ -13,34 +24,43 @@
   color: #fff;
   margin-right: 20px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .links:hover {
   transform: scale(1.2);
-  transition: all 0.2s ease-out;
+  transition: all 0.5s ease;
 }
 
 .contact:hover {
-  transform: scale(1.2);
-  transition: all 0.2s ease-out;
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+  box-shadow: 2px 2px 10px #cf77f3, 0px 2px 10px #009bff, -2px 2px 10px #2ac9db;
 }
 
 .contact {
   text-decoration: none;
   font-weight: bold;
   color: #fff;
-  background: rgb(98, 90, 255);
+  /* background: rgb(98, 90, 255);
   background: linear-gradient(
     90deg,
     rgba(98, 90, 255, 1) 0%,
     rgba(29, 173, 253, 1) 56%,
     rgba(69, 186, 252, 1) 100%
-  );
+  ); */
   width: 80px;
   border-radius: 20px;
   text-align: center;
   padding: 7px;
   margin-right: 20px;
+  background-image: linear-gradient(
+    -90deg,
+    #cf77f3 0%,
+    #009bff 47%,
+    #2ac9db 100%
+  );
+  cursor: pointer;
 }
 
 @media (max-width: 600px) {
@@ -48,5 +68,6 @@
     font-size: 15px;
     justify-content: center;
     padding: 0 10px;
+    width: 90%;
   }
 }

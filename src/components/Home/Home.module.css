@@ -24,6 +24,17 @@
 
 .info {
   width: 50%;
+  animation: infoo 2s ease 2s forwards;
+  opacity: 0;
+}
+
+@keyframes infoo {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .info h1 {
@@ -35,6 +46,18 @@
 }
 .profile img {
   width: 100%;
+  animation: image 2s ease 1s forwards;
+  opacity: 0;
+}
+
+@keyframes image {
+  from {
+    transform: scale(0.7);
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 @media (max-width: 600px) {

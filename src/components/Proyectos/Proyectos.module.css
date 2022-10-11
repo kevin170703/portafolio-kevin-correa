@@ -25,30 +25,37 @@
   text-align: center;
   flex-wrap: wrap;
   width: 60%;
-  height: 350px;
+  height: 80%;
+  margin-top: -100px;
 }
 
 .contentImg img {
-  padding: 10px;
   width: 300px;
   border-radius: 20px;
 }
 
 .contentImg p {
   font-size: 20px;
-  padding-bottom: 10px;
+  padding: 20px 0;
+}
+
+.contentImg h3 {
+  opacity: 1;
+  transition: all ease 2s;
+  color: #fff;
+  text-decoration: none;
+  width: 250px;
+  margin-left: 20px;
+  margin-top: -80px;
+}
+
+.app {
+  transition: all 0.5s ease;
 }
 
 .app:hover {
-  transform: scale(1.05);
-  transition: all 0.2s ease-out;
-  background: rgba(29, 86, 253, 10);
-  background: linear-gradient(
-    90deg,
-    rgba(112, 70, 210, 1) 0%,
-    rgba(29, 86, 253, 1) 54%,
-    rgba(69, 186, 252, 1) 100%
-  );
+  box-shadow: #00b4d8 2px 2px 20px, rgba(151, 65, 252, 1) -2px -2px 20px;
+  transform: scale(0.95);
 }
 
 @media (max-width: 600px) {
