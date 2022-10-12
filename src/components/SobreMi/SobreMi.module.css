@@ -1,14 +1,13 @@
 .content {
-  background: rgba(29, 86, 253, 10);
+  background: rgb(250, 0, 210);
   background: linear-gradient(
-    90deg,
-    rgba(112, 70, 210, 1) 0%,
-    rgba(29, 86, 253, 1) 54%,
-    rgba(69, 186, 252, 1) 100%
+    270deg,
+    rgba(250, 0, 210, 1) 0%,
+    rgba(1, 53, 199, 1) 100%
   );
   height: 110vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 0 15% 0 15%;
   color: #fff;
@@ -22,22 +21,23 @@
 }
 
 .sobreMi h2 {
-  font-size: 80px;
+  font-size: 70px;
+  margin: 0 20px 20px 0;
 }
 
 .sobreMi button {
-  border-radius: 30px;
+  border-radius: 20px;
   border: none;
   background-color: #ede0d4;
   margin-top: 10px;
   padding: 20px;
   font-size: 20px;
-  box-shadow: 5px 5px 20px #002855;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease-out;
 }
 
 .sobreMi button:hover {
   transform: scale(1.05);
-  transition: all 0.2s ease-out;
 }
 
 .sobreMi a {
@@ -47,19 +47,33 @@
 
 .logos {
   width: 40%;
-  height: 50%;
+  height: 60%;
   padding: 30px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background: transparent;
+  border-radius: 40px;
+
+  background: linear-gradient(
+      180deg,
+      rgba(22, 24, 30, 0) 0%,
+      rgba(22, 24, 30, 0.7) 65.28%
+    ),
+    linear-gradient(0deg, rgba(22, 24, 30, 0.4), rgba(22, 24, 30, 0.4));
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.7);
+}
+
+.logos h2 {
+  text-align: center;
+  width: 100%;
 }
 
 @media (max-width: 600px) {
   .content {
     padding: 0 10px;
     flex-direction: column;
+    justify-content: space-evenly;
   }
   .sobreMi {
     text-align: center;
@@ -82,7 +96,7 @@
   }
 
   .logos {
-    width: 100%;
+    width: 80%;
     height: 30%;
   }
   .logos h2 {

@@ -11,7 +11,7 @@ export default function SobreMi() {
   return (
     <div className={s.content} id="sobremi">
       <div className={s.sobreMi}>
-        <h2>Sobre mi</h2>
+        <h2>{"<Sobre mi/>"}</h2>
         <p>
           Mi nombre es Kevin Correa, FullStack developer en Henry, me considero
           una persona responsable, atenta, dispuesta a escuchar, aprender de los
@@ -24,13 +24,13 @@ export default function SobreMi() {
         </button>
       </div>
       <div className={s.logos}>
-        <img src={css} alt="css" />
-        <img src={html} alt="html" />
-        <img src={js} alt="js" />
         <h2>Tecnologias que manejo</h2>
-        <img src={react} alt="react" />
-        <img src={redux} alt="redux" />
-        <img src={node} alt="node.js" />
+        <img className={s.imagenes} src={css} alt="css" />
+        <img className={s.imagenes} src={html} alt="html" />
+        <img className={s.imagenes} src={js} alt="js" />
+        <img className={s.imagenes} src={react} alt="react" />
+        <img className={s.imagenes} src={redux} alt="redux" />
+        <img className={s.imagenes} src={node} alt="node.js" />
       </div>
     </div>
   );

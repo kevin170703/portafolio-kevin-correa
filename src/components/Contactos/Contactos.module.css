@@ -1,11 +1,10 @@
 .content {
   height: 50vh;
-  background: rgba(29, 86, 253, 10);
+  background: rgb(250, 0, 210);
   background: linear-gradient(
-    90deg,
-    rgba(112, 70, 210, 1) 0%,
-    rgba(29, 86, 253, 1) 54%,
-    rgba(69, 186, 252, 1) 100%
+    270deg,
+    rgba(250, 0, 210, 1) 0%,
+    rgba(1, 53, 199, 1) 100%
   );
   display: flex;
   justify-content: center;
@@ -14,17 +13,30 @@
 
 .content i {
   color: #fff;
-  padding: 40px;
+  padding: 20px;
+  margin-right: 10px;
+  transition: all ease 0.5s;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.content i:hover {
+  transform: scale(1.1);
 }
 
 .content p {
   color: #fff;
-  margin-left: -20px;
+  margin-left: -30px;
+  background-color: #000;
+  padding: 10px;
+  border-radius: 20px;
 }
 
 @media (max-width: 600px) {
   .content {
     height: 20vh;
+    display: flex;
+    flex-wrap: wrap;
   }
   .content i {
     padding: 10px;

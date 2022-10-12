@@ -8,68 +8,116 @@
   );
   color: #fff;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   padding: 100px 15% 0 15%;
-}
-
-.content h2 {
-  padding-right: 30px;
-  font-size: 50px;
+  padding-bottom: 100px;
 }
 
 .contentImg {
   display: flex;
-  justify-content: center;
   align-items: center;
-  text-align: center;
+  justify-content: space-around;
   flex-wrap: wrap;
-  width: 60%;
-  height: 80%;
+  width: 100%;
+  height: 70%;
+
   margin-top: -100px;
 }
 
-.contentImg img {
-  width: 300px;
-  border-radius: 20px;
+.contentImg h2 {
+  font-size: 50px;
+  height: 90%;
 }
-
-.contentImg p {
-  font-size: 20px;
-  padding: 20px 0;
-}
-
-.contentImg h3 {
-  opacity: 1;
-  transition: all ease 2s;
-  color: #fff;
+.contentImg a {
   text-decoration: none;
-  width: 250px;
-  margin-left: 20px;
-  margin-top: -80px;
 }
 
-.app {
-  transition: all 0.5s ease;
+.proyectos {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  width: 270px;
+  height: 420px;
+  border-radius: 40px;
+  background: rgb(250, 0, 210);
+  background: linear-gradient(
+    180deg,
+    rgba(250, 0, 210, 1) 0%,
+    rgba(1, 21, 78, 1) 60%
+  );
+  box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.1),
+    inset 10px 10px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  transition: all ease 0.5s;
 }
 
-.app:hover {
-  box-shadow: #00b4d8 2px 2px 20px, rgba(151, 65, 252, 1) -2px -2px 20px;
-  transform: scale(0.95);
+.proyectos:hover {
+  transform: translateY(-10px);
+}
+
+.proyectos p {
+  color: #fff;
+  margin-top: 50px;
+  font-size: 18px;
+  filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.5));
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30%;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  margin: 10px 0 0 10px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.logo h5 {
+  width: max-content;
+  height: max-content;
+  margin-left: 15px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #fff;
 }
 
 @media (max-width: 600px) {
   .content {
     padding: 0 10px;
+    height: 120vh;
     flex-direction: column-reverse;
     justify-content: space-evenly;
     text-align: center;
   }
-
-  .content h2 {
+  .contentImg h2 {
+    font-size: 50px;
+    height: max-content;
+    margin-top: -200px;
     padding: 0;
   }
+
   .contentImg {
     width: 100%;
+  }
+
+  .proyectos {
+    height: 350px;
+    margin-bottom: 30px;
+  }
+
+  .proyectos p {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .logo {
+    height: 40%;
   }
 }
