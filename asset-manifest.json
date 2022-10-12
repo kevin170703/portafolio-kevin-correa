@@ -1,16 +1,14 @@
 {
   "files": {
-    "main.css": "/portafolio-kevin-correa/static/css/main.0571d9c4.css",
-    "main.js": "/portafolio-kevin-correa/static/js/main.9e92baf4.js",
-    "static/media/pokeapp.png": "/portafolio-kevin-correa/static/media/pokeapp.727565c121a722b5aea6.png",
+    "main.css": "/portafolio-kevin-correa/static/css/main.1385f838.css",
+    "main.js": "/portafolio-kevin-correa/static/js/main.127e37e0.js",
     "static/media/profile.png": "/portafolio-kevin-correa/static/media/profile.e28fb280657a6ca88651.png",
-    "static/media/appClima.png": "/portafolio-kevin-correa/static/media/appClima.e818cb218910e9859810.png",
     "index.html": "/portafolio-kevin-correa/index.html",
-    "main.0571d9c4.css.map": "/portafolio-kevin-correa/static/css/main.0571d9c4.css.map",
-    "main.9e92baf4.js.map": "/portafolio-kevin-correa/static/js/main.9e92baf4.js.map"
+    "main.1385f838.css.map": "/portafolio-kevin-correa/static/css/main.1385f838.css.map",
+    "main.127e37e0.js.map": "/portafolio-kevin-correa/static/js/main.127e37e0.js.map"
   },
   "entrypoints": [
-    "static/css/main.0571d9c4.css",
-    "static/js/main.9e92baf4.js"
+    "static/css/main.1385f838.css",
+    "static/js/main.127e37e0.js"
   ]
 }
