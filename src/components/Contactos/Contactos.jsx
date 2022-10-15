@@ -19,8 +19,21 @@ export default function Contactos() {
         <i className="bx bxl-whatsapp  bx-lg"></i>
       </a>
 
-      <i className="bx bx-envelope bx-lg"></i>
-      <p>correakevinfabian01@gmail.com</p>
+      <a
+        href="mailto:correakevinfabian01@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i className="bx bx-envelope bx-lg"></i>
+      </a>
+      <a
+        href="mailto:correakevinfabian01@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={s.contactame}
+      >
+        Contactame
+      </a>
     </div>
   );
 }
