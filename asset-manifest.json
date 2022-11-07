@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/portafolio-kevin-correa/static/css/main.a4998aae.css",
-    "main.js": "/portafolio-kevin-correa/static/js/main.5b6596ea.js",
+    "main.css": "/portafolio-kevin-correa/static/css/main.915f242b.css",
+    "main.js": "/portafolio-kevin-correa/static/js/main.655c8204.js",
     "static/media/profile.png": "/portafolio-kevin-correa/static/media/profile.e28fb280657a6ca88651.png",
+    "static/media/bolsa-de-la-compra.png": "/portafolio-kevin-correa/static/media/bolsa-de-la-compra.47772a85d8cde05caeed.png",
     "index.html": "/portafolio-kevin-correa/index.html",
-    "main.a4998aae.css.map": "/portafolio-kevin-correa/static/css/main.a4998aae.css.map",
-    "main.5b6596ea.js.map": "/portafolio-kevin-correa/static/js/main.5b6596ea.js.map"
+    "main.915f242b.css.map": "/portafolio-kevin-correa/static/css/main.915f242b.css.map",
+    "main.655c8204.js.map": "/portafolio-kevin-correa/static/js/main.655c8204.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4998aae.css",
-    "static/js/main.5b6596ea.js"
+    "static/css/main.915f242b.css",
+    "static/js/main.655c8204.js"
   ]
 }
