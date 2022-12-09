@@ -1,8 +1,10 @@
 import React from "react";
 import s from "./Proyectos.module.css";
-import nublado from "../../img/nublado.png";
-import pokebola from "../../img/pokebola.png";
-import bolsa from "../../img/bolsa-de-la-compra.png";
+
+import { GrShop } from "react-icons/gr";
+import { TbPokeball } from "react-icons/tb";
+import { TiWeatherPartlySunny } from "react-icons/ti";
+import { MdWorkOutline } from "react-icons/md";
 
 export default function Proyectos() {
   return (
@@ -12,7 +14,7 @@ export default function Proyectos() {
         <a href="https://velvetpf.vercel.app/" target="_blank">
           <div className={s.proyectos}>
             <div className={s.logo}>
-              <img src={bolsa} alt="" />
+              <GrShop size="40" className={s.logos} />
               <h5>Velvet ecommerce</h5>
             </div>
             <p>
@@ -33,7 +35,7 @@ export default function Proyectos() {
         <a href="https://pokemon-app-kevin170703.vercel.app/" target="_blank">
           <div className={s.proyectos}>
             <div className={s.logo}>
-              <img src={pokebola} alt="" />
+              <TbPokeball size="50" className={s.logos} />
               <h5>App pokemons</h5>
             </div>
             <p>
@@ -53,7 +55,8 @@ export default function Proyectos() {
         <a href="https://app-clima-correa-kevin.netlify.app/" target="_blank">
           <div className={s.proyectos}>
             <div className={s.logo}>
-              <img src={nublado} alt="" />
+              <TiWeatherPartlySunny size="50" className={s.logos} />
+
               <h5>App clima</h5>
             </div>
             <p>
@@ -61,6 +64,26 @@ export default function Proyectos() {
               Tecnologias utilizadas:
               <br />
               <br /> React
+              <br /> JavaScript
+              <br /> HTML
+              <br /> CSS
+            </p>
+          </div>
+        </a>
+        <a href="https://services-jobs.vercel.app" target="_blank">
+          <div className={s.proyectos}>
+            <div className={s.logo}>
+              <MdWorkOutline size="50" className={s.logos} />
+              <h5>App services</h5>
+            </div>
+            <p>
+              Tecnologias utilizadas:
+              <br />
+              <br /> React
+              <br />
+              Redux
+              <br /> Sequelize
+              <br /> Node.js
               <br /> JavaScript
               <br /> HTML
               <br /> CSS

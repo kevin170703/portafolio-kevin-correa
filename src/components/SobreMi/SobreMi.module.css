@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 15% 0 15%;
+  padding: 0 10rem;
   color: #fff;
 }
 
@@ -17,7 +17,8 @@
   width: 50%;
 }
 .sobreMi {
-  width: 50%;
+  width: 500px;
+  margin-right: 2rem;
 }
 
 .sobreMi h2 {
@@ -28,12 +29,18 @@
 .sobreMi button {
   border-radius: 20px;
   border: none;
-  background-color: #ede0d4;
+  background: linear-gradient(
+    270deg,
+    rgba(1, 53, 199, 1) 0%,
+    rgba(250, 0, 210, 1) 100%
+  );
+
   margin-top: 10px;
   padding: 20px;
   font-size: 20px;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px #333;
   transition: all 0.2s ease-out;
+  margin-top: 1rem;
 }
 
 .sobreMi button:hover {
@@ -41,12 +48,12 @@
 }
 
 .sobreMi a {
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
 
 .logos {
-  width: 40%;
+  width: 500px;
   height: 60%;
   padding: 30px;
   display: flex;
@@ -64,9 +71,20 @@
   box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.7);
 }
 
+.contentLogos {
+  text-align: center;
+  margin-bottom: 1rem;
+  transition: all 0.5s ease;
+}
+
+.contentLogos:hover {
+  transform: scale(1.1);
+}
+
 .logos h2 {
   text-align: center;
   width: 100%;
+  font-size: 2rem;
 }
 
 @media (max-width: 600px) {
@@ -79,13 +97,14 @@
     text-align: center;
     width: 100%;
     margin-bottom: 20px;
+    margin-right: 0;
   }
 
   .sobreMi h2 {
-    font-size: 40px;
+    font-size: 3rem;
   }
   .sobreMi p {
-    font-size: 15px;
+    font-size: 1rem;
   }
 
   .sobreMi button {
@@ -99,13 +118,14 @@
     width: 80%;
     height: 30%;
   }
+
+  .imagenes {
+    width: 70px;
+  }
   .logos h2 {
     width: 100%;
     text-align: center;
-    font-size: 20px;
-  }
-
-  .logos img {
-    width: 70px;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
   }
 }

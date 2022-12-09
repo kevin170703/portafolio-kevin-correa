@@ -1,11 +1,9 @@
 import React from "react";
 import s from "./SobreMi.module.css";
-import css from "../../img/css.png";
-import html from "../../img/html.png";
-import js from "../../img/js.png";
-import react from "../../img/react.png";
-import redux from "../../img/redux.png";
-import node from "../../img/node.png";
+
+import { DiJavascript1, DiReact, DiCss3, DiNodejsSmall } from "react-icons/di";
+import { AiFillHtml5 } from "react-icons/ai";
+import { SiSequelize, SiRedux } from "react-icons/si";
 
 export default function SobreMi() {
   return (
@@ -13,9 +11,13 @@ export default function SobreMi() {
       <div className={s.sobreMi}>
         <h2>{"<Sobre mi/>"}</h2>
         <p>
-          Mi nombre es Kevin Correa, FullStack developer en Henry, me considero
-          una persona responsable, atenta, dispuesta a escuchar, aprender de los
-          demas y con grandes habilidades para el trabajo en equipo.
+          👋Me presento, mi nombre es Kevin, un apasionado de la tecnología, me
+          considero una persona responsable, de rápido aprendizaje, atenta,
+          dispuesta a escuchar y aprender de los demás. <br />
+          💻Me adentré en este mundo ya que desde una temprana edad siempre me a
+          gustado, ya que vos mismo podes resolver problemas gracias a tus
+          conocimientos y, por lo tanto, ayudar a otros con las resolución que
+          realizaste.
         </p>
         <button>
           <a href="https://drive.google.com/uc?export=download&id=1xUxztdLTc4LDCZtcUi_04pu0r53Wv3G8">
@@ -25,12 +27,34 @@ export default function SobreMi() {
       </div>
       <div className={s.logos}>
         <h2>Tecnologias que manejo</h2>
-        <img className={s.imagenes} src={css} alt="css" />
-        <img className={s.imagenes} src={html} alt="html" />
-        <img className={s.imagenes} src={js} alt="js" />
-        <img className={s.imagenes} src={react} alt="react" />
-        <img className={s.imagenes} src={redux} alt="redux" />
-        <img className={s.imagenes} src={node} alt="node.js" />
+        <div className={s.contentLogos}>
+          <AiFillHtml5 size="100" className={s.imagenes} />
+          <p>HTML</p>
+        </div>
+        <div className={s.contentLogos}>
+          <DiJavascript1 size="100" className={s.imagenes} />
+          <p>JavaSript</p>
+        </div>
+        <div className={s.contentLogos}>
+          <DiCss3 size="100" className={s.imagenes} />
+          <p>CSS</p>
+        </div>
+        <div className={s.contentLogos}>
+          <DiReact size="100" className={s.imagenes} />
+          <p>React</p>
+        </div>
+        <div className={s.contentLogos}>
+          <SiRedux size="100" className={s.imagenes} />
+          <p>Redux</p>
+        </div>
+        <div className={s.contentLogos}>
+          <DiNodejsSmall size="100" className={s.imagenes} />
+          <p>Node.js</p>
+        </div>
+        <div className={s.contentLogos}>
+          <SiSequelize size="100" className={s.imagenes} />
+          <p>Sequelize</p>
+        </div>
       </div>
     </div>
   );

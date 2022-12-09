@@ -8,6 +8,7 @@
   position: fixed;
   opacity: 0;
   animation: navbar 1s ease 3s forwards;
+  backdrop-filter: blur(3px);
 }
 
 @keyframes navbar {
