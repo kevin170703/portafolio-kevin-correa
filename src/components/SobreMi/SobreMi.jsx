@@ -3,7 +3,12 @@ import s from "./SobreMi.module.css";
 
 import { DiJavascript1, DiReact, DiCss3, DiNodejsSmall } from "react-icons/di";
 import { AiFillHtml5 } from "react-icons/ai";
-import { SiSequelize, SiRedux } from "react-icons/si";
+import {
+  SiSequelize,
+  SiRedux,
+  SiTypescript,
+  SiTailwindcss,
+} from "react-icons/si";
 
 export default function SobreMi() {
   return (
@@ -32,12 +37,16 @@ export default function SobreMi() {
           <p>HTML</p>
         </div>
         <div className={s.contentLogos}>
+          <DiCss3 size="100" className={s.imagenes} />
+          <p>CSS</p>
+        </div>
+        <div className={s.contentLogos}>
           <DiJavascript1 size="100" className={s.imagenes} />
           <p>JavaSript</p>
         </div>
         <div className={s.contentLogos}>
-          <DiCss3 size="100" className={s.imagenes} />
-          <p>CSS</p>
+          <SiTypescript size="90" className={s.imagenes} />
+          <p>Typescript</p>
         </div>
         <div className={s.contentLogos}>
           <DiReact size="100" className={s.imagenes} />
@@ -54,6 +63,10 @@ export default function SobreMi() {
         <div className={s.contentLogos}>
           <SiSequelize size="100" className={s.imagenes} />
           <p>Sequelize</p>
+        </div>
+        <div className={s.contentLogos}>
+          <SiTailwindcss size="90" className={s.imagenes} />
+          <p>Tailwindcss</p>
         </div>
       </div>
     </div>
