@@ -13,6 +13,10 @@
   padding-bottom: 100px;
 }
 
+.contentNo {
+  display: none;
+}
+
 .title {
   width: 100%;
   height: max-content;
@@ -53,6 +57,17 @@
     inset 10px 10px 10px rgba(0, 0, 0, 0.5);
   text-align: center;
   transition: all ease 0.5s;
+  animation: show 1.5s linear;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .proyectos:hover {

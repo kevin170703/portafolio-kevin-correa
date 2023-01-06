@@ -1,18 +1,28 @@
 import React from "react";
 import s from "./Proyectos.module.css";
-
+import { useState, useRef } from "react";
 import { GrShop } from "react-icons/gr";
 import { TbPokeball } from "react-icons/tb";
 import { TiWeatherPartlySunny } from "react-icons/ti";
 import { MdWorkOutline } from "react-icons/md";
 
 export default function Proyectos() {
+  const [show, setShow] = useState(false);
+  const elemento = useRef();
+
+  function handelView() {
+    const { y } = elemento.current.getBoundingClientRect();
+    const res = y <= 400 ? true : false;
+    setShow(res);
+  }
+  window.addEventListener("scroll", handelView);
+
   return (
-    <div className={s.content} id="proyectos">
+    <div className={s.content} id="proyectos" ref={elemento}>
       <div className={s.contentImg}>
         <h2 className={s.title}>Proyectos:</h2>
         <a href="https://velvetpf.vercel.app/" target="_blank">
-          <div className={s.proyectos}>
+          <div className={show === false ? s.contentNo : s.proyectos}>
             <div className={s.logo}>
               <GrShop size="40" className={s.logos} />
               <h5>Velvet ecommerce</h5>
@@ -33,7 +43,7 @@ export default function Proyectos() {
           </div>
         </a>
         <a href="https://pokemon-app-kevin170703.vercel.app/" target="_blank">
-          <div className={s.proyectos}>
+          <div className={show === false ? s.contentNo : s.proyectos}>
             <div className={s.logo}>
               <TbPokeball size="50" className={s.logos} />
               <h5>App pokemons</h5>
@@ -53,7 +63,7 @@ export default function Proyectos() {
           </div>
         </a>
         <a href="https://app-clima-correa-kevin.netlify.app/" target="_blank">
-          <div className={s.proyectos}>
+          <div className={show === false ? s.contentNo : s.proyectos}>
             <div className={s.logo}>
               <TiWeatherPartlySunny size="50" className={s.logos} />
 
@@ -71,7 +81,7 @@ export default function Proyectos() {
           </div>
         </a>
         <a href="https://services-jobs.vercel.app" target="_blank">
-          <div className={s.proyectos}>
+          <div className={show === false ? s.contentNo : s.proyectos}>
             <div className={s.logo}>
               <MdWorkOutline size="50" className={s.logos} />
               <h5>App services</h5>
