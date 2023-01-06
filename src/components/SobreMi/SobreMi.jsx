@@ -1,6 +1,5 @@
 import React from "react";
 import s from "./SobreMi.module.css";
-
 import { DiJavascript1, DiReact, DiCss3, DiNodejsSmall } from "react-icons/di";
 import { AiFillHtml5 } from "react-icons/ai";
 import {
@@ -9,11 +8,22 @@ import {
   SiTypescript,
   SiTailwindcss,
 } from "react-icons/si";
+import { useState, useRef } from "react";
 
 export default function SobreMi() {
+  const [show, setShow] = useState(false);
+  const elemento = useRef();
+
+  function handelView() {
+    const { y } = elemento.current.getBoundingClientRect();
+    const res = y <= 400 ? true : false;
+    setShow(res);
+  }
+  window.addEventListener("scroll", handelView);
+
   return (
-    <div className={s.content} id="sobremi">
-      <div className={s.sobreMi}>
+    <div className={s.content} id="sobremi" ref={elemento}>
+      <div className={show === false ? s.contentNo : s.sobreMi}>
         <h2>{"<Sobre mi/>"}</h2>
         <p>
           👋Me presento, mi nombre es Kevin, un apasionado de la tecnología, me
@@ -25,12 +35,12 @@ export default function SobreMi() {
           realizaste.
         </p>
         <button>
-          <a href="https://drive.google.com/uc?export=download&id=1bit5wO_hdHZVHx4oFF3wt9C0IEJqH-fw">
+          <a href="https://drive.google.com/uc?export=download&id=1XuPEw_0mPBIjOqSnkpZcVlvof-9KMkhW">
             Descargar curriculum
           </a>
         </button>
       </div>
-      <div className={s.logos}>
+      <div className={show === false ? s.contentNo : s.logos}>
         <h2>Tecnologias que manejo</h2>
         <div className={s.contentLogos}>
           <AiFillHtml5 size="100" className={s.imagenes} />
