@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/portafolio-kevin-correa/static/css/main.2b2c64f1.css",
-    "main.js": "/portafolio-kevin-correa/static/js/main.8d32fb38.js",
+    "main.css": "/portafolio-kevin-correa/static/css/main.cd00e4fa.css",
+    "main.js": "/portafolio-kevin-correa/static/js/main.3c78a7d5.js",
     "static/media/profile.png": "/portafolio-kevin-correa/static/media/profile.e28fb280657a6ca88651.png",
     "index.html": "/portafolio-kevin-correa/index.html",
-    "main.2b2c64f1.css.map": "/portafolio-kevin-correa/static/css/main.2b2c64f1.css.map",
-    "main.8d32fb38.js.map": "/portafolio-kevin-correa/static/js/main.8d32fb38.js.map"
+    "main.cd00e4fa.css.map": "/portafolio-kevin-correa/static/css/main.cd00e4fa.css.map",
+    "main.3c78a7d5.js.map": "/portafolio-kevin-correa/static/js/main.3c78a7d5.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b2c64f1.css",
-    "static/js/main.8d32fb38.js"
+    "static/css/main.cd00e4fa.css",
+    "static/js/main.3c78a7d5.js"
   ]
 }
