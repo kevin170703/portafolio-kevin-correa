@@ -36,24 +36,26 @@
 .contact {
   cursor: pointer;
   text-align: center;
+  text-decoration: none;
   color: #fff;
-  background: rgb(250, 0, 210);
+  background: rgb(0, 229, 255);
   background: linear-gradient(
-    270deg,
-    rgba(250, 0, 210, 1) 0%,
-    rgba(1, 53, 199, 1) 62%
+    90deg,
+    rgba(0, 229, 255, 1) 0%,
+    rgba(0, 229, 255, 0.5298319156764268) 100%
   );
   font-family: inherit;
+  font-size: 17px;
   display: inline-block;
   width: 6em;
   height: 2.5em;
   line-height: 2.5em;
   margin: 0 20px 0 0;
+  padding: 0 0.5rem;
   position: relative;
   overflow: hidden;
   transition: color 0.5s;
   z-index: 1;
-  font-size: 17px;
   border-radius: 20px;
   font-weight: 500;
 }
