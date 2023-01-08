@@ -5,6 +5,10 @@ import { GrShop } from "react-icons/gr";
 import { TbPokeball } from "react-icons/tb";
 import { TiWeatherPartlySunny } from "react-icons/ti";
 import { MdWorkOutline } from "react-icons/md";
+import fondoServices from "../../img/services.png";
+import fondoPokemons from "../../img/pokemons.png";
+import fondoClima from "../../img/clima.png";
+import fondoVelvet from "../../img/velvet.png";
 
 export default function Proyectos() {
   const [show, setShow] = useState(false);
@@ -21,83 +25,88 @@ export default function Proyectos() {
     <div className={s.content} id="proyectos" ref={elemento}>
       <div className={s.contentImg}>
         <h2 className={s.title}>Proyectos:</h2>
+        <a href="https://services-jobs.vercel.app" target="_blank">
+          <div className={show === false ? s.contentNo : s.proyectos}>
+            <img src={fondoServices} alt="" />
+
+            {/* <div className={s.logo}>
+              <MdWorkOutline size="50" className={s.logos} />
+            </div> */}
+            <div className={s.info}>
+              <h5 className={s.title_proyectos}>App services</h5>
+              <p>
+                Tecnologias utilizadas:
+                <br />
+                <br /> React, Redux
+                <br /> Node.js, Express
+                <br /> PostgresSQL, Sequelize
+                <br /> JavaScript
+                <br /> HTML, CSS
+              </p>
+            </div>
+          </div>
+        </a>
         <a href="https://velvetpf.vercel.app/" target="_blank">
           <div className={show === false ? s.contentNo : s.proyectos}>
-            <div className={s.logo}>
-              <GrShop size="40" className={s.logos} />
-              <h5>Velvet ecommerce</h5>
+            <img src={fondoVelvet} alt="" />
+            {/* <div className={s.logo}>
+              <GrShop size="50" className={s.logos} />
+            </div> */}
+            <div className={s.info}>
+              <h5 className={s.title_proyectos}>Velvet ecommerce</h5>
+              <p>
+                Tecnologias utilizadas:
+                <br />
+                <br /> React, Redux
+                <br /> Tailwindcss
+                <br /> Node.js, Express
+                <br /> PostgresSQL, Sequelize
+                <br /> JavaScript
+                <br /> HTML, CSS
+              </p>
             </div>
-            <p>
-              Tecnologias utilizadas:
-              <br />
-              <br /> React
-              <br />
-              Redux
-              <br /> Sequelize
-              <br /> Node.js
-              <br /> JavaScript
-              <br /> HTML
-              <br /> CSS
-              <br /> entre otras.
-            </p>
           </div>
         </a>
         <a href="https://pokemon-app-kevin170703.vercel.app/" target="_blank">
           <div className={show === false ? s.contentNo : s.proyectos}>
-            <div className={s.logo}>
-              <TbPokeball size="50" className={s.logos} />
-              <h5>App pokemons</h5>
+            <img src={fondoPokemons} alt="" />
+
+            {/* <div className={s.logo}>
+              <TbPokeball size="70" className={s.logos} />
+            </div> */}
+            <div className={s.info}>
+              <h5 className={s.title_proyectos}>App pokemons</h5>
+              <p>
+                Tecnologias utilizadas:
+                <br />
+                <br /> React, Redux
+                <br /> Node.js, Express
+                <br /> PostgresSQL, Sequelize
+                <br /> JavaScript
+                <br /> HTML, CSS
+              </p>
             </div>
-            <p>
-              Tecnologias utilizadas:
-              <br />
-              <br /> React
-              <br />
-              Redux
-              <br /> Sequelize
-              <br /> Node.js
-              <br /> JavaScript
-              <br /> HTML
-              <br /> CSS
-            </p>
           </div>
         </a>
         <a href="https://app-clima-correa-kevin.netlify.app/" target="_blank">
           <div className={show === false ? s.contentNo : s.proyectos}>
-            <div className={s.logo}>
-              <TiWeatherPartlySunny size="50" className={s.logos} />
+            <img src={fondoClima} alt="" />
 
-              <h5>App clima</h5>
+            {/* <div className={s.logo}>
+              <TiWeatherPartlySunny size="50" className={s.logos} />
+            </div> */}
+            <div className={s.info}>
+              <h5 className={s.title_proyectos}>App clima</h5>
+              <p>
+                {" "}
+                Tecnologias utilizadas:
+                <br />
+                <br /> React
+                <br /> JavaScript
+                <br /> HTML
+                <br /> CSS
+              </p>
             </div>
-            <p>
-              {" "}
-              Tecnologias utilizadas:
-              <br />
-              <br /> React
-              <br /> JavaScript
-              <br /> HTML
-              <br /> CSS
-            </p>
-          </div>
-        </a>
-        <a href="https://services-jobs.vercel.app" target="_blank">
-          <div className={show === false ? s.contentNo : s.proyectos}>
-            <div className={s.logo}>
-              <MdWorkOutline size="50" className={s.logos} />
-              <h5>App services</h5>
-            </div>
-            <p>
-              Tecnologias utilizadas:
-              <br />
-              <br /> React
-              <br />
-              Redux
-              <br /> Sequelize
-              <br /> Node.js
-              <br /> JavaScript
-              <br /> HTML
-              <br /> CSS
-            </p>
           </div>
         </a>
       </div>
