@@ -5,4 +5,8 @@
 
 .App {
   font-family: "Quicksand", sans-serif;
+  background: url("./img/bckPorfolio.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
 }
