@@ -41,7 +41,7 @@ export default function SobreMi() {
         </button>
       </div>
       <div className={show === false ? s.contentNo : s.logos}>
-        <h2>Tecnologias que manejo</h2>
+        <h2>Tecnologias</h2>
         <div className={s.contentLogos}>
           <AiFillHtml5 size="100" className={s.imagenes} />
           <p>HTML</p>
