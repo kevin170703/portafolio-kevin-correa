@@ -9,17 +9,19 @@ import fondoServices from "../../img/services.png";
 import fondoPokemons from "../../img/pokemons.png";
 import fondoClima from "../../img/clima.png";
 import fondoVelvet from "../../img/velvet.png";
+import { useEffect } from "react";
 
 export default function Proyectos() {
   const [show, setShow] = useState(false);
   const elemento = useRef();
-
-  function handelView() {
-    const { y } = elemento.current.getBoundingClientRect();
-    const res = y <= 400 ? true : false;
-    setShow(res);
-  }
-  window.addEventListener("scroll", handelView);
+  useEffect(() => {
+    function handelView() {
+      const { y } = elemento.current.getBoundingClientRect();
+      const res = y <= 400 ? true : false;
+      setShow(res);
+    }
+    window.addEventListener("scroll", handelView);
+  }, []);
 
   return (
     <div className={s.content} id="proyectos" ref={elemento}>
@@ -35,13 +37,16 @@ export default function Proyectos() {
             <div className={s.info}>
               <h5 className={s.title_proyectos}>App services</h5>
               <p>
+                Una una página donde pueden encontrar y publicar servicios de
+                forma rapida y sencilla.
+              </p>
+              <p>
                 Tecnologias utilizadas:
                 <br />
                 <br /> React, Redux
                 <br /> Node.js, Express
                 <br /> PostgresSQL, Sequelize
-                <br /> JavaScript
-                <br /> HTML, CSS
+                <br /> JavaScript, HTML, CSS
               </p>
             </div>
           </div>
@@ -54,15 +59,14 @@ export default function Proyectos() {
             </div> */}
             <div className={s.info}>
               <h5 className={s.title_proyectos}>Velvet ecommerce</h5>
+              <p>Un ecommerce donde pudes encontrat tus prendas favoritas.</p>
               <p>
                 Tecnologias utilizadas:
                 <br />
-                <br /> React, Redux
-                <br /> Tailwindcss
+                <br /> React, Redux, Tailwindcss
                 <br /> Node.js, Express
                 <br /> PostgresSQL, Sequelize
-                <br /> JavaScript
-                <br /> HTML, CSS
+                <br /> JavaScript, HTML, CSS
               </p>
             </div>
           </div>
@@ -77,13 +81,16 @@ export default function Proyectos() {
             <div className={s.info}>
               <h5 className={s.title_proyectos}>App pokemons</h5>
               <p>
+                Un pagina donde podras ver, crear y buscar tus pokemones
+                favotitos.
+              </p>
+              <p>
                 Tecnologias utilizadas:
                 <br />
                 <br /> React, Redux
                 <br /> Node.js, Express
                 <br /> PostgresSQL, Sequelize
-                <br /> JavaScript
-                <br /> HTML, CSS
+                <br /> JavaScript, HTML, CSS
               </p>
             </div>
           </div>
@@ -97,6 +104,8 @@ export default function Proyectos() {
             </div> */}
             <div className={s.info}>
               <h5 className={s.title_proyectos}>App clima</h5>
+              <p>Un lugar donde podras ver el cima de cuidades y paises.</p>
+
               <p>
                 {" "}
                 Tecnologias utilizadas:
