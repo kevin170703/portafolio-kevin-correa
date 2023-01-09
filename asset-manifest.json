@@ -1,14 +1,20 @@
 {
   "files": {
-    "main.css": "/portafolio-kevin-correa/static/css/main.cd00e4fa.css",
-    "main.js": "/portafolio-kevin-correa/static/js/main.c1360fea.js",
+    "main.css": "/portafolio-kevin-correa/static/css/main.c81e55b3.css",
+    "main.js": "/portafolio-kevin-correa/static/js/main.d4a16a05.js",
+    "static/media/clima.png": "/portafolio-kevin-correa/static/media/clima.cfc210cab0c956483425.png",
+    "static/media/velvet.png": "/portafolio-kevin-correa/static/media/velvet.40966a9ca22a5a36b07d.png",
+    "static/media/pokemons.png": "/portafolio-kevin-correa/static/media/pokemons.aae22797a65490d4a779.png",
     "static/media/profile.png": "/portafolio-kevin-correa/static/media/profile.e28fb280657a6ca88651.png",
+    "static/media/services.png": "/portafolio-kevin-correa/static/media/services.38ec1311a7f017d80c59.png",
     "index.html": "/portafolio-kevin-correa/index.html",
-    "main.cd00e4fa.css.map": "/portafolio-kevin-correa/static/css/main.cd00e4fa.css.map",
-    "main.c1360fea.js.map": "/portafolio-kevin-correa/static/js/main.c1360fea.js.map"
+    "static/media/bck-movil.svg": "/portafolio-kevin-correa/static/media/bck-movil.441c918587571c1a44db.svg",
+    "static/media/bckPorfolio.svg": "/portafolio-kevin-correa/static/media/bckPorfolio.7085067d38b61d0bf562.svg",
+    "main.c81e55b3.css.map": "/portafolio-kevin-correa/static/css/main.c81e55b3.css.map",
+    "main.d4a16a05.js.map": "/portafolio-kevin-correa/static/js/main.d4a16a05.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd00e4fa.css",
-    "static/js/main.c1360fea.js"
+    "static/css/main.c81e55b3.css",
+    "static/js/main.d4a16a05.js"
   ]
 }
