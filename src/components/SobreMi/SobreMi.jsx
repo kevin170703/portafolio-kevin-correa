@@ -9,17 +9,20 @@ import {
   SiTailwindcss,
 } from "react-icons/si";
 import { useState, useRef } from "react";
+import { useEffect } from "react";
 
 export default function SobreMi() {
   const [show, setShow] = useState(false);
   const elemento = useRef();
 
-  function handelView() {
-    const { y } = elemento.current.getBoundingClientRect();
-    const res = y <= 400 ? true : false;
-    setShow(res);
-  }
-  window.addEventListener("scroll", handelView);
+  useEffect(() => {
+    function handelView() {
+      const { y } = elemento.current.getBoundingClientRect();
+      const res = y <= 400 ? true : false;
+      setShow(res);
+    }
+    window.addEventListener("scroll", handelView);
+  }, []);
 
   return (
     <div className={s.content} id="sobremi" ref={elemento}>
@@ -43,39 +46,39 @@ export default function SobreMi() {
       <div className={show === false ? s.contentNo : s.logos}>
         <h2>Tecnologias</h2>
         <div className={s.contentLogos}>
-          <AiFillHtml5 size="100" className={s.imagenes} />
+          <AiFillHtml5 size="100" className={s.imagenes} color="#f25320" />
           <p>HTML</p>
         </div>
         <div className={s.contentLogos}>
-          <DiCss3 size="100" className={s.imagenes} />
+          <DiCss3 size="100" className={s.imagenes} color="#00a7e0" />
           <p>CSS</p>
         </div>
         <div className={s.contentLogos}>
-          <DiJavascript1 size="100" className={s.imagenes} />
+          <DiJavascript1 size="100" className={s.imagenes} color="#ead41c" />
           <p>JavaSript</p>
         </div>
         <div className={s.contentLogos}>
-          <SiTypescript size="90" className={s.imagenes} />
+          <SiTypescript size="90" className={s.imagenes} color="#0174c1" />
           <p>Typescript</p>
         </div>
         <div className={s.contentLogos}>
-          <DiReact size="100" className={s.imagenes} />
+          <DiReact size="100" className={s.imagenes} color="#5ccfee" />
           <p>React</p>
         </div>
         <div className={s.contentLogos}>
-          <SiRedux size="100" className={s.imagenes} />
+          <SiRedux size="100" className={s.imagenes} color="#7046b2" />
           <p>Redux</p>
         </div>
         <div className={s.contentLogos}>
-          <DiNodejsSmall size="100" className={s.imagenes} />
+          <DiNodejsSmall size="100" className={s.imagenes} color="#7cc327" />
           <p>Node.js</p>
         </div>
         <div className={s.contentLogos}>
-          <SiSequelize size="100" className={s.imagenes} />
+          <SiSequelize size="100" className={s.imagenes} color="#03a6e3" />
           <p>Sequelize</p>
         </div>
         <div className={s.contentLogos}>
-          <SiTailwindcss size="90" className={s.imagenes} />
+          <SiTailwindcss size="90" className={s.imagenes} color="#07adca" />
           <p>Tailwindcss</p>
         </div>
       </div>
