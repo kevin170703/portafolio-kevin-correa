@@ -10,3 +10,12 @@
   background-attachment: fixed;
   background-size: 100%;
 }
+
+@media (max-width: 600px) {
+  .App {
+    background: url("./img/bck-movil.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+  }
+}
