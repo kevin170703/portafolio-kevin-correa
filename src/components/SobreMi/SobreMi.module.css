@@ -21,7 +21,7 @@
 .sobreMi {
   width: 500px;
   margin-right: 2rem;
-  animation: show 1.5s linear;
+  animation: show 1.5s ease-in;
 }
 
 @keyframes show {
@@ -82,7 +82,7 @@
     ),
     linear-gradient(0deg, rgba(22, 24, 30, 0.4), rgba(22, 24, 30, 0.4));
   box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.7); */
-  animation: show 1.5s linear;
+  animation: show 1.5s ease-in;
 }
 
 .contentLogos {
