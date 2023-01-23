@@ -1,5 +1,5 @@
 .content {
-  min-height: 100vh;
+  min-height: 110vh;
   /* background: rgb(0, 0, 0);
   background: radial-gradient(
     circle,
@@ -11,10 +11,9 @@
   display: flex;
   justify-content: center;
   padding: 10rem 0;
-  padding-bottom: 100px;
 }
 
-.contentNo {
+.notVisible {
   display: none;
 }
 
@@ -23,7 +22,7 @@
   height: max-content;
   font-size: 4rem;
   text-align: center;
-  margin: 2rem 0;
+  margin: 0 0 2rem 0;
 }
 
 .contentImg {
@@ -40,7 +39,7 @@
   text-decoration: none;
 }
 
-.proyectos {
+.proyects {
   display: flex;
   justify-content: center;
   margin-top: 40px;
@@ -50,10 +49,10 @@
   text-align: start;
   transition: all ease 0.5s;
   animation: show 1.5s linear;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
-.proyectos img {
+.proyects img {
   position: absolute;
   width: 450px;
   height: 250px;
@@ -62,16 +61,25 @@
 
 .info {
   opacity: 0;
-  z-index: 1;
-  transition: 0.5s linear;
-  width: 100%;
-  height: 100%;
+  width: 450px;
+  height: 100px;
   font-size: 0.5rem;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 80%,
+    rgba(0, 212, 255, 0) 100%
+  );
+  transform: translateY(190px);
+  border-radius: 10px;
+  transition: ease 0.5s;
 }
 
-.proyectos:hover .info {
+.proyects:hover .info {
   opacity: 1;
-  backdrop-filter: blur(4px) brightness(50%);
+  height: 300px;
+  position: absolute;
+  z-index: 2;
 }
 
 @keyframes show {
@@ -84,41 +92,37 @@
   }
 }
 
-.proyectos:hover {
-  transform: scale(0.99);
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: -150px;
-  height: 300px;
-  width: max-content;
-}
-
-.logos {
-  width: 200px;
-  height: 200px;
-  padding: 5px;
-  margin: 10px 0 0 10px;
-  color: #fff;
-}
-
-.title_proyectos {
+.title_proyects {
   font-size: 30px;
   font-weight: 300;
-  color: #fff;
   height: max-content;
   margin-top: 20px;
   margin-left: 1rem;
+  color: #000;
 }
 
-.proyectos p {
-  color: #fff;
+.info p {
+  color: #000;
   font-size: 18px;
-  filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.5));
   margin-left: 1rem;
+}
+
+.titleTencologies {
+  text-align: center;
+  margin: 1rem;
+  width: 100%;
+}
+
+.contentIcons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentLogos {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 600px) {
@@ -141,23 +145,23 @@
     width: 100%;
   }
 
-  .proyectos {
+  .proyects {
     width: 400px;
     height: 250px;
     margin-bottom: 30px;
   }
 
-  .proyectos img {
+  .proyects img {
     width: 400px;
     height: 250px;
   }
 
-  .proyectos p {
+  .proyects p {
     font-size: 15px;
     margin-top: 10px;
   }
 
-  .logo {
-    height: 40%;
+  .info {
+    display: none;
   }
 }
