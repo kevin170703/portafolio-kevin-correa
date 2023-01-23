@@ -7,6 +7,7 @@ import {
   SiRedux,
   SiTypescript,
   SiTailwindcss,
+  SiPostgresql,
 } from "react-icons/si";
 import { useState, useRef } from "react";
 import { useEffect } from "react";
@@ -72,6 +73,10 @@ export default function SobreMi() {
         <div className={s.contentLogos}>
           <DiNodejsSmall size="100" className={s.imagenes} color="#7cc327" />
           <p>Node.js</p>
+        </div>
+        <div className={s.contentLogos}>
+          <SiPostgresql size="100" className={s.imagenes} color="#03a6e3" />
+          <p>PostgreSQL</p>
         </div>
         <div className={s.contentLogos}>
           <SiSequelize size="100" className={s.imagenes} color="#03a6e3" />
