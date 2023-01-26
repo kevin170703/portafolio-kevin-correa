@@ -42,7 +42,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className={s.contactame}>Contactame</button>
+            <button className={s.contactMe}>Contactame</button>
           </a>
         </div>
       </div>
