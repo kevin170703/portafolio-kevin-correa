@@ -27,7 +27,7 @@ export default function SobreMi() {
 
   return (
     <div className={s.content} id="sobremi" ref={elemento}>
-      <div className={show === false ? s.contentNo : s.sobreMi}>
+      <div className={show === false ? s.notVisible : s.sobreMi}>
         <h2>{"<Sobre mi/>"}</h2>
         <p>
           👋Me presento, mi nombre es Kevin, un apasionado de la tecnología, me
@@ -44,7 +44,7 @@ export default function SobreMi() {
           </a>
         </button>
       </div>
-      <div className={show === false ? s.contentNo : s.logos}>
+      <div className={show === false ? s.notVisible : s.logos}>
         <h2>Tecnologias</h2>
         <div className={s.contentLogos}>
           <AiFillHtml5 size="100" className={s.imagenes} color="#f25320" />
