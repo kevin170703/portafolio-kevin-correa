@@ -39,7 +39,7 @@ export default function SobreMi() {
           realizaste.
         </p>
         <button>
-          <a href="https://drive.google.com/uc?export=download&id=1Ne5xaZ7vShCAMF4MgDfJ__tcefz04yK2">
+          <a href="https://drive.google.com/uc?export=download&id=10Rm4EBK06dad5JfUbjGrreCnx0b-Wuf7">
             Descargar curriculum
           </a>
         </button>
