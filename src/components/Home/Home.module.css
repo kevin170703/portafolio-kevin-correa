@@ -6,139 +6,72 @@
   color: #fff;
 }
 
-.person {
+.info {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 80%;
-  height: 60%;
-  padding: 10px;
+  width: 100%;
+  height: 100vh;
+  padding: 0 10%;
+  animation: infoo 2s ease 2s forwards;
 }
 
-.info {
-  width: 100%;
-  animation: infoo 2s ease 2s forwards;
-  opacity: 0;
+.info h5 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.info span {
+  color: #00e5ff;
 }
 
 .info h1 {
-  font-size: 50px;
+  font-size: 3rem;
 }
 .info h2 {
-  margin-top: -20px;
-  font-size: 20px;
+  font-size: 2rem;
+  color: #808598;
 }
 
-.contentIcons {
+.contentButtons {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.contentIcons a {
-  color: #fff;
-  text-decoration: none;
-}
-.icons {
-  margin-left: 10px;
-  transition: 0.5s linear;
-  cursor: pointer;
-}
-
-.icons:hover {
-  transform: scale(0.95);
+  margin-top: 2rem;
+  gap: 1rem;
 }
 
 .contactMe {
-  /* background: #00e5ff; */
-  background: rgb(0, 229, 255);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 229, 255, 1) 0%,
-    rgba(0, 229, 255, 0.5298319156764268) 100%
-  );
+  background: transparent;
+  border: 1px solid #00e5ff;
   cursor: pointer;
-  margin-top: 1rem;
   color: #fff;
-  border: none;
-  width: 120px;
-  padding: 0.8rem 0;
+  padding: 0.8rem 1.2rem;
   border-radius: 40px;
+  font-weight: bold;
   font-size: 1rem;
-  transition: 0.2s linear;
-  animation: move 1s linear infinite;
+  transition: ease 0.4s;
 }
 
-@keyframes move {
-  0% {
-    transform: rotate(0);
-  }
-  25% {
-    transform: rotate(2deg);
-  }
-  50% {
-    transform: rotate(0);
-  }
-  75% {
-    transform: rotate(-2deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
-}
-
-.contactame:hover {
-  transform: scale(0.95);
-  box-shadow: 0 0 10px #00e5ff;
-}
-
-@keyframes infoo {
-  from {
-    transform: translateX(-200px);
-  }
-  to {
-    opacity: 1;
-  }
+.contactMe:hover {
+  transform: translateY(-10px);
 }
 
 .profile {
   width: 30%;
 }
-.profile img {
-  width: 100%;
-  animation: image 2s ease 1s forwards;
-  opacity: 0;
-}
-
-@keyframes image {
-  from {
-    transform: scale(0.7);
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
 
 @media (max-width: 600px) {
-  .person {
-    width: 100%;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  .profile {
-    width: 100%;
-  }
-
   .info {
     width: 100%;
-    text-align: center;
+    align-items: center;
+    text-align: start;
+    padding: 0;
   }
 
   .info h1 {
-    font-size: 40px;
+    font-size: 1.8rem;
+  }
+  .info h2 {
+    font-size: 1.5rem;
   }
 }

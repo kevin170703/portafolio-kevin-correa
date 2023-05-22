@@ -1,42 +1,18 @@
 import React from "react";
 import s from "./Home.module.css";
-import profile from "../../img/profile.png";
-import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
+import { Link } from "react-scroll";
 
 export default function Home() {
   return (
     <div className={s.home} id="home">
-      <div className={s.person}>
-        <div className={s.profile}>
-          <img src={profile} alt="foto-de-perfil" />
-        </div>
-        <div className={s.info}>
-          <h1>Kevin Correa</h1>
-          <br />
-          <h2>FullStack Developer</h2>
-          <div className={s.contentIcons}>
-            <a
-              href="https://www.linkedin.com/in/kevin-correa-dev/"
-              target="_BLANK"
-            >
-              <FaLinkedin size="40" className={s.icons} />
-            </a>
-            <a
-              href="mailto:correakevinfabian01@gmail.com"
-              target="_BLANK"
-              rel="noopener noreferrer"
-            >
-              <MdEmail size="50" className={s.icons} />
-            </a>
-            <a
-              href="https://wa.me/+543754506364"
-              target="_BLANK"
-              rel="noopener noreferrer"
-            >
-              <FaWhatsapp size="40" className={s.icons} />
-            </a>
-          </div>
+      <div className={s.info}>
+        <h5>
+          Hola<span>.</span>
+        </h5>
+        <h1>Mi nombre es Kevin Correa</h1>
+        <br />
+        <h2>FullStack Developer</h2>
+        <div className={s.contentButtons}>
           <a
             href="mailto:correakevinfabian01@gmail.com"
             target="_blank"
@@ -44,6 +20,18 @@ export default function Home() {
           >
             <button className={s.contactMe}>Contactame</button>
           </a>
+
+          <Link
+            activeClass="active"
+            to="sobremi"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            className={s.contactMe}
+          >
+            Sobre Mi
+          </Link>
         </div>
       </div>
     </div>
