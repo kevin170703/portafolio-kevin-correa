@@ -38,11 +38,22 @@ export default function Nav() {
       >
         Proyectos
       </Link>
+      <Link
+        activeClass="active"
+        to="experiencie"
+        spy={true}
+        smooth={true}
+        offset={-10}
+        duration={500}
+        className={s.links}
+      >
+        Experiencia
+      </Link>
       <a
         href="mailto:correakevinfabian01@gmail.com"
-        target="_blank"
         rel="noopener noreferrer"
-        className={s.contact}
+        target="_blank"
+        className={s.links}
       >
         Contactame
       </a>
