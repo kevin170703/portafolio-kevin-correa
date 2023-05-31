@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./SobreMi.module.css";
-import profile from "../../img/perfil2.png";
+import profile from "../../assets/perfil2.png";
 
 export default function SobreMi() {
   return (
