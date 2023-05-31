@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portafolio-kevin-correa/static/css/main.5fdb5035.css",
-    "main.js": "/portafolio-kevin-correa/static/js/main.21df9d11.js",
+    "main.js": "/portafolio-kevin-correa/static/js/main.9e830dc3.js",
     "static/media/clima.png": "/portafolio-kevin-correa/static/media/clima.cfc210cab0c956483425.png",
     "static/media/velvet.png": "/portafolio-kevin-correa/static/media/velvet.40966a9ca22a5a36b07d.png",
     "static/media/pokemons.png": "/portafolio-kevin-correa/static/media/pokemons.aae22797a65490d4a779.png",
@@ -9,10 +9,10 @@
     "static/media/perfil2.png": "/portafolio-kevin-correa/static/media/perfil2.5fa00e53293a05644d77.png",
     "index.html": "/portafolio-kevin-correa/index.html",
     "main.5fdb5035.css.map": "/portafolio-kevin-correa/static/css/main.5fdb5035.css.map",
-    "main.21df9d11.js.map": "/portafolio-kevin-correa/static/js/main.21df9d11.js.map"
+    "main.9e830dc3.js.map": "/portafolio-kevin-correa/static/js/main.9e830dc3.js.map"
   },
   "entrypoints": [
     "static/css/main.5fdb5035.css",
-    "static/js/main.21df9d11.js"
+    "static/js/main.9e830dc3.js"
   ]
 }
