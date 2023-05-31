@@ -1,19 +1,18 @@
 import React from "react";
 import s from "./Proyectos.module.css";
-import { useState, useRef } from "react";
-import fondoServices from "../../img/services.png";
-import fondoPokemons from "../../img/pokemons.png";
-import fondoClima from "../../img/clima.png";
-import fondoVelvet from "../../img/velvet.png";
-import { useEffect } from "react";
-// icons
-import { DiJavascript1, DiReact, DiCss3, DiNodejsSmall } from "react-icons/di";
-import { GrFormNext } from "react-icons/gr";
+import servicesImage from "../../assets/services.png";
+import pokemonAppImage from "../../assets/pokemons.png";
+import velvetImage from "../../assets/velvet.png";
+import weatherAppImage from "../../assets/clima.png";
+
 import {
   SiSequelize,
   SiRedux,
   SiTailwindcss,
   SiPostgresql,
+  SiReact,
+  SiNodedotjs,
+  SiJavascript,
 } from "react-icons/si";
 
 export default function Proyectos() {
@@ -22,8 +21,8 @@ export default function Proyectos() {
       <div className={s.contentProjects}>
         <h2 className={s.title}>Proyectos:</h2>
         <div className={s.project}>
-          <a href="https://services-jobs.vercel.app" target="_blank">
-            <img src={fondoServices} alt="" />
+          <a href="https://servicees.vercel.app/" target="_blank">
+            <img src={servicesImage} alt="" />
           </a>
 
           <div className={s.info}>
@@ -34,7 +33,7 @@ export default function Proyectos() {
             </p>
             <div className={s.contentIcons}>
               <div className={s.contentLogos}>
-                <DiJavascript1
+                <SiJavascript
                   size="30"
                   className={s.imagenes}
                   color="#ead41c"
@@ -43,7 +42,7 @@ export default function Proyectos() {
               </div>
 
               <div className={s.contentLogos}>
-                <DiReact size="30" className={s.imagenes} color="#5ccfee" />
+                <SiReact size="30" className={s.imagenes} color="#5ccfee" />
                 <p>React</p>
               </div>
               <div className={s.contentLogos}>
@@ -51,11 +50,7 @@ export default function Proyectos() {
                 <p>Redux</p>
               </div>
               <div className={s.contentLogos}>
-                <DiNodejsSmall
-                  size="30"
-                  className={s.imagenes}
-                  color="#7cc327"
-                />
+                <SiNodedotjs size="30" className={s.imagenes} color="#7cc327" />
                 <p>Node.js</p>
               </div>
               <div className={s.contentLogos}>
@@ -73,9 +68,10 @@ export default function Proyectos() {
             </div>
           </div>
         </div>
+
         <div className={s.projectTwo}>
           <a href="https://velvetpf.vercel.app/" target="_blank">
-            <img src={fondoVelvet} alt="" />
+            <img src={velvetImage} alt="" />
           </a>
 
           <div className={s.info}>
@@ -85,7 +81,7 @@ export default function Proyectos() {
             </p>
             <div className={s.contentIcons}>
               <div className={s.contentLogos}>
-                <DiJavascript1
+                <SiJavascript
                   size="30"
                   className={s.imagenes}
                   color="#ead41c"
@@ -94,7 +90,7 @@ export default function Proyectos() {
               </div>
 
               <div className={s.contentLogos}>
-                <DiReact size="30" className={s.imagenes} color="#5ccfee" />
+                <SiReact size="30" className={s.imagenes} color="#5ccfee" />
                 <p>React</p>
               </div>
               <div className={s.contentLogos}>
@@ -102,11 +98,7 @@ export default function Proyectos() {
                 <p>Redux</p>
               </div>
               <div className={s.contentLogos}>
-                <DiNodejsSmall
-                  size="30"
-                  className={s.imagenes}
-                  color="#7cc327"
-                />
+                <SiNodedotjs size="30" className={s.imagenes} color="#7cc327" />
                 <p>Node.js</p>
               </div>
               <div className={s.contentLogos}>
@@ -121,16 +113,13 @@ export default function Proyectos() {
                 />
                 <p>Tailwindcss</p>
               </div>
-              <div className={s.contentLogos}>
-                <GrFormNext size="30" className={s.imagenes} color="#07adca" />
-              </div>
             </div>
           </div>
         </div>
 
         <div className={s.project}>
           <a href="https://pokemon-app-kevin170703.vercel.app/" target="_blank">
-            <img src={fondoPokemons} alt="" />
+            <img src={pokemonAppImage} alt="" />
           </a>
           <div className={s.info}>
             <h5 className={s.title_project}>App pokemons</h5>
@@ -140,7 +129,7 @@ export default function Proyectos() {
             </p>
             <div className={s.contentIcons}>
               <div className={s.contentLogos}>
-                <DiJavascript1
+                <SiJavascript
                   size="30"
                   className={s.imagenes}
                   color="#ead41c"
@@ -148,7 +137,7 @@ export default function Proyectos() {
                 <p>JavaSript</p>
               </div>
               <div className={s.contentLogos}>
-                <DiReact size="30" className={s.imagenes} color="#5ccfee" />
+                <SiReact size="30" className={s.imagenes} color="#5ccfee" />
                 <p>React</p>
               </div>
               <div className={s.contentLogos}>
@@ -156,11 +145,7 @@ export default function Proyectos() {
                 <p>Redux</p>
               </div>
               <div className={s.contentLogos}>
-                <DiNodejsSmall
-                  size="30"
-                  className={s.imagenes}
-                  color="#7cc327"
-                />
+                <SiNodedotjs size="30" className={s.imagenes} color="#7cc327" />
                 <p>Node.js</p>
               </div>
               <div className={s.contentLogos}>
@@ -181,7 +166,7 @@ export default function Proyectos() {
 
         <div className={s.projectTwo}>
           <a href="https://app-clima-correa-kevin.netlify.app/" target="_blank">
-            <img src={fondoClima} alt="" />
+            <img src={weatherAppImage} alt="" />
           </a>
           <div className={s.info}>
             <h5 className={s.title_project}>App clima</h5>
@@ -191,7 +176,7 @@ export default function Proyectos() {
 
             <div className={s.contentIcons}>
               <div className={s.contentLogos}>
-                <DiJavascript1
+                <SiJavascript
                   size="30"
                   className={s.imagenes}
                   color="#ead41c"
@@ -200,7 +185,7 @@ export default function Proyectos() {
               </div>
 
               <div className={s.contentLogos}>
-                <DiReact size="30" className={s.imagenes} color="#5ccfee" />
+                <SiReact size="30" className={s.imagenes} color="#5ccfee" />
                 <p>React</p>
               </div>
             </div>
